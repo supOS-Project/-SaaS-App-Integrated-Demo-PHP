@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <h3>租户的用户列表</h3>
+        <ul>
+            {volist name="user_list" id="user"}
+            <li style="margin-top: 20px;">
+              <div>用户ID：{$user.user_id}</div>  
+              <div>租户：{$user.tenant_id}</div>  
+              <div>用户：{$user.user_name}</div>  
+            </li>
+            {/volist}
+        </ul>
+    </body>
+</html>
